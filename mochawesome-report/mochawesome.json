@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-14T09:43:46.370Z",
+    "end": "2023-02-14T09:43:46.468Z",
+    "duration": 98,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ca58b438-4249-40df-a816-9efd9fca3acd",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d6e3c7e8-1cb2-4ac5-8d7e-23f8c670c8b6",
+          "title": "GET /",
+          "fullFile": "D:\\Newton\\Node_Module1\\Node_Testing\\__tests__\\test.js",
+          "file": "\\__tests__\\test.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "it should post the user",
+              "fullTitle": "GET / it should post the user",
+              "timedOut": false,
+              "duration": 54,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "chai\n  .request(app)\n  .get('/')\n  .end((err, response) => {\n    response.should.have.status(200);\n  });\ndone();",
+              "err": {},
+              "uuid": "3aebd568-5bb4-4fad-b267-995421f8e67b",
+              "parentUUID": "d6e3c7e8-1cb2-4ac5-8d7e-23f8c670c8b6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3aebd568-5bb4-4fad-b267-995421f8e67b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 54,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 60000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.2.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}
